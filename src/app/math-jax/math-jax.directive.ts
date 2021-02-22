@@ -35,7 +35,7 @@ export class MathJaxDirective implements AfterViewInit, OnChanges, OnDestroy {
    * An array of input MathJax expressions.
    */
   @Input('mathjax')
-  public MathJaxExpressions: string[];
+  public MathJaxExpressions: string[] | string;
   private readonly mathJaxHub$: Observable<any>;
   /**
    * The associated native element.
